@@ -97,6 +97,22 @@
             cursor: not-allowed;
         }
 
+        .external-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        .external-links a {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .external-links a:hover {
+            text-decoration: underline;
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -115,9 +131,9 @@
         <!-- 日志条目 -->
         <div class="log-entry active" data-index="1">
             <h2>核心玩法初步确定</h2>
-            <div class="date">2017年3月11日</div>
+            <div class="date">2017年3月12日</div>
             <div class="content">
-                <p>经过多次讨论，我们确定了以开放世界探索为核心，结合传统文化元素的玩法框架...</p>
+                <p>经过多次讨论，我们确定了以开放世界探索为核心，结合中国传统文化元素的玩法框架...</p>
                 <ul>
                     <li>完成基础移动系统原型</li>
                     <li>搭建测试场景</li>
@@ -128,7 +144,7 @@
 
         <div class="log-entry" data-index="2">
             <h2>角色控制器优化</h2>
-            <div class="date">2017年3月13日</div>
+            <div class="date">2017年3月19日</div>
             <div class="content">
                 <p>本周重点优化了角色控制的手感，主要改进包括：</p>
                 <ul>
@@ -141,7 +157,7 @@
 
         <div class="log-entry" data-index="3">
             <h2>首次内部测试</h2>
-            <div class="date">2017年3月19日</div>
+            <div class="date">2017年3月21日</div>
             <div class="content">
                 <p>进行了第一次内部测试，收集到以下反馈：</p>
                 <ul>
@@ -155,6 +171,12 @@
         <div class="navigation">
             <button onclick="previousEntry()">上一页</button>
             <button onclick="nextEntry()">下一页</button>
+        </div>
+
+        <!-- 外部链接 -->
+        <div class="external-links">
+            <a href="http://0.wentianplay.net" target="_blank">网页上一页</a>
+            <a href="http://1.wentianplay.net" target="_blank">网页下一页</a>
         </div>
     </div>
 
